@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .dd {
+            width: 130px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        .button {
+            background-color: deeppink;
+        }
+
+        .parent {
+            background-color: black;
+            color: white;
+            justify-content: space-around;
+            height:60px ;
+            position: relative;
+            justify-content: center;
+
+        }
+
+        .child1 {
+            position: absolute;
+            display: none;
+            width: 130px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            line-height: 30px;
+            padding: 10px;
+            border: 1px solid beige
+        }
+        .qq{
+            display: flex;
+            padding-left: 50px;
+        }
+
+        .qq:hover .child1 {
+            display: block;
+        }
+
+        .parent2 {
+            position: relative;
+        }
+
+        .child2 {
+            position: absolute;
+            display: none;
+            width: 300px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            line-height: 30px;
+            padding: 10px;
+            border: 1px solid beige;
+            margin-left: 140px;
+            margin-top: -40px;
+        }
+
+        .parent2:hover .child2 {
+            display: block;
+        }
+
+        .parent3 {
+            position: relative;
+        }
+
+        .child3 {
+            position: absolute;
+            display: none;
+            width: 200px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            line-height: 30px;
+            padding: 10px;
+            border: 1px solid beige;
+            margin-left: 300px;
+            margin-top: -40px;
+        }
+
+        .parent3:hover .child3 {
+            display: block;
+        }
+
+        .parent4 {
+            position: relative;
+        }
+
+        .child4 {
+            position: absolute;
+            display: none;
+            width: 250px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            line-height: 30px;
+            padding: 10px;
+            border: 1px solid beige;
+            margin-left: 250px;
+            margin-top: -70px;
+        }
+
+        .parent4:hover .child4 {
+            display: block;
+         
+        }
+
+        .qq {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .video {
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .ww {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: absolute;
+            width: 100%;
+            margin: 200px 0px 0px 40px;
+        }
+
+        .ww h1 {
+            font-size: 50px;
+            margin-bottom: 60px;
+
+        }
+
+        .button1 {
+            color: white;
+            background-color: rgb(231, 6, 119);
+            width: 220px;
+            height: 60px;
+            border-radius: 3px;
+            border: aliceblue;
+            box-shadow: none;
+        }
+
+        .button2 {
+            color: white;
+            background-color: black;
+            height: 60px;
+            width: 240px;
+            border: aliceblue;
+            border-radius: 3px;
+        }
+
+        .ee {
+            margin-top: 30px;
+        }
+
+        .rr {
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+        }
+
+        .rr p {
+            margin-top: 20px;
+            text-size-adjust: 50px;
+        }
+
+        .rr .vv {
+            width: 50px;
+        }
+
+        .ll {
+            background-color: black;
+            color: white;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .cc {
+            margin-top: 30px;
+        }
+
+        .nn {
+            background-color: black;
+            color: white;
+        }
+        .mm{
+            display: flex;
+            justify-content: space-around;
+        }
+        .fuck{
+            background-color: black;
+            color: white;
+        }
+        .zz{
+            background-color: black;
+            color: white;
+            display: flex;
+            /* justify-content: space-around; */
+            
+        }
+        /* .dd{
+            margin-left: 30px;
+        } */
+        .zz p{
+            color: rgb(231, 6, 81);
+        }
+       .work{
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-around;
+       }
+       .logo{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+       }
+       .we{
+        margin-left: 140px;
+        margin-top: 100px;
+       }
+       .vv{
+        margin-top: 80px;
+       }
+       .bird{
+        /* background-image: url(../FREELANCER.html/ai-generated-art-v2.jpg); */
+        color: white;
+       }
+       .bird p{
+        color: rgb(231, 6, 81);
+        
+       }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <img src="../FREELANCER.html/freelancer-logo.svg" alt="" class="dd">
+        <p>How it works</p>
+        <p>Browse Jobs</p>
+        <a href="index.html"><p>Log in</p></a>
+       <a href="singup.html"> <p>Sign up</p></a>
+        <a href="postaproject.html"><button class="button">Post a Project</button></a>
+    </div>
+    <div class="parent">
+        <div class="qq">
+            <p>Find Jobs</p>
+            <p>Hire Freelancer</p>
+            <div class="child1">
+                <div class="parent2">
+                    <p>By skill</p>
+                    <div class="child2">
+                        <div class="parent3">Find Graphic Design Jobs
+                            <div class="child3">
+                                <p>Find logo Design Jobs</p>
+                                <p>Find Web Design Jobs</p>
+                                <p>Find Banner Design Jobs</p>
+                                <p>Find 3D modelling Jobs</p>
+                                <p>Find Photoshop Jobs</p>
+                                <p>Find Illustration Jobs</p>
+                                <p>Find 3D Annimation Jobs</p>
+                                <p>Find 2D Annimation Jobs</p>
+                                <p>Find other Graphic Designjobs</p>
+                            </div>
+                        </div>
+                        <div class="parent4">
+                            <p>Find website Jobs</p>
+                            <div class="child4">
+                                <p>Find PHP Jobs</p>
+                                <p>Find javascript Jobs</p>
+                                <p>Find .NETS Jobs</p>
+                                <p> Find CSS Jobs</p>
+                                <p>find amazon web service Jobs</p>
+                                <p>Find HTML5 Jobs</p>
+                                <p>Find wordexpress Jobs</p>
+                                <p>Find wix Jobs</p>
+                                <p>Find Squarespace Jobs</p>
+                                <p>Find shopify Jobs</p>
+                                <p>Find Magento Jobs</p>
+                                <p>Find Database Development Jobs</p>
+                                <p>Find Other website Jobs</p>
+                            </div>
+                        </div>
+                        <p>Find mobile app Development Jobs</p>
+                        <p>Find software Development Jobs</p>
+                        <p>Find internet Marketing Jobs</p>
+                        <p>Find data entry Jobs</p>
+                        <p>find SEO Jobs</p>
+                        <p> Find Writing Jobs</p>
+                        <p>Find legal jobs</p>
+                        <p>Find Finance Jobs</p>
+                        <p>Find Logistics Jobs</p>
+                        <p>Find Manufacturing Jobs</p>
+                    </div>
+                </div>
+                <p> By language</p>
+                <p> Featured jobs</p>
+                <p>Find contests</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="qq">
+        <video class="video" autoplay loop muted>
+            <source src="../FREELANCER.html/WhatsApp Video 2023-10-25 at 12.47.33.mp4">
+        </video>
+        <div class="ww">
+            <h1><b>Hire the best <br>freelancers for any job,<br>online.</b></h1>
+            <p> <iconify-icon icon="prime:circle-fill" style="color:white;" width="12"></iconify-icon> World's largest
+                freelance marketplace</p>
+            <p> <iconify-icon icon="prime:circle-fill" style="color:white;" width="12"></iconify-icon> Any job you can
+                possibly think of</p>
+            <p> <iconify-icon icon="prime:circle-fill" style="color:white;" width="12"></iconify-icon> Save up to 90% &
+                get quotes for free</p>
+            <p> <iconify-icon icon="prime:circle-fill" style="color:white;" width="12"></iconify-icon> Pay only when
+                you're 100% happy</p>
+            <div class="ee">
+                <button class="button1"><b>Hire a Freelancer</b></button>
+                <button class="button2"><b>Earn Money Freelancing</b></button>
+            </div>
+        </div>
+    </div>
+    <div class="rr">
+        <p><b>As used by </b></p>
+        <img src="../FREELANCER.html/amazon_logo2-darkmode.svg" alt="">
+        <img src="../FREELANCER.html/facebook-corporate-logo2-darkmode.svg" alt="">
+        <img src="../FREELANCER.html/deloitte-logo2-darkmode.svg" alt="">
+        <img src="../FREELANCER.html/nasa-logo3.svg" alt="" class="vv">
+        <img src="../FREELANCER.html/ibm-logo2-darkmode.svg" alt="">
+        <img src="../FREELANCER.html/airbus-logo2-darkmode.svg" alt="">
+        <img src="../FREELANCER.html/telstra-logo-darkmode.svg" alt="">
+        <img src="../FREELANCER.html/fujitsu-logo-darkmode.svg" alt="">
+        <img src="../FREELANCER.html/google-logo.svg" alt="">
+    </div>
+
+    <div class="ll">
+        <br>
+        <br>
+        <br>
+        <h1 class="cc"><b> Need something Done ?</b></h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="flex">
+            <div>
+                <h1>Post a Job</h1>
+                <br>
+                <br>
+                <br>
+                <p>It’s free and easy to post a job. <br> Simply fill in a title, description <br> and budget and
+                    competitive bids <br> come within minutes.</p>
+            </div>
+            <div>
+                <h1>Choose freelancers</h1>
+                <br>
+                <br>
+                <br>
+                <p>No job is too big or too small. <br> We've got freelancers for jobs of <br> any size or budget,
+                    across 1800+ <br> skills. No job is too complex. We <br> can get it done!</p>
+            </div>
+            <div>
+                <h1>Pay safely</h1>
+                <br>
+                <br>
+                <br>
+                <p>Only pay for work when it has <br> been completed and you're 100% <br> satisfied with the quality
+                    using our <br> milestone payment system.</p>
+            </div>
+            <div>
+                <h1>We’re here to help</h1>
+                <br>
+                <br>
+                <br>
+                <p>Our talented team of recruiters <br> can help you find the best <br> freelancer for the job and our
+                    <br> technical co-pilots can even <br> manage the project for you.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="nn">
+        <br>
+        <br>
+        <br>
+        <h1><b>What's great about it</b>?</h1>
+        <br>
+        <br>
+        <br>
+        <div class="mm">
+            <div>
+            <h1>Browse Portfolios</h1>
+            <br>
+            <br>
+            <br>
+            <p>Find professionals you can trust <br> by browsing their samples of <br> previous work and reading their
+                <br> profile reviews.</p>
+            </div>
+        <div>
+            <h1>Fast bids</h1>
+            <br>
+            <br>
+            <br>
+            <p>Receive obligation free quotes <br> from our talented freelancers fast. <br> 80% of projects get bid on
+                within <br> 60 seconds.</p>
+        </div>
+        <div>
+            <h1>Quality work</h1>
+            <br>
+            <br>
+            <br>
+            <p>Freelancer.com has by far the <br> largest pool of quality freelancers <br> globally- over 60 million to choose <br> from.
+            </p>
+        </div>
+        <div>
+            <h1>Track progress</h1>
+            <br>
+            <br>
+            <br>
+            <p>Keep up-to-date and on-the-go <br> with our time tracker, and mobile <br> app. Always know what <br> freelancers are up to.
+            </p>
+        </div>
+        </div>
+    </div>
+    <div class="fuck">
+      <br>
+        <br>
+        <br>
+        <h1><b>Make it real with Freelancer</b></h1>
+        <br>
+        <br>
+        <h3><b>Get some inspiration from 1800+ skills</b></h3>
+    </div>
+    <div class="pic">
+        <div>
+
+        </div>
+    </div>
+    <div  class="zz" >
+        <div class="work">
+       <h1 class="vv">  <b>  Get work done in <p> over 2700 </p> different <br> categories </b> </h1>  
+        <div class="we">
+           <h5>Website Design</h5>
+           <br>
+           <h5>Mobile Apps</h5>
+           <br>
+          
+           <h5>Android Apps</h5>
+           <br>
+           <h5>Iphone Apps</h5>
+           <br>
+          
+           <h5>Software Architecture</h5>
+           <br>
+           <h5>Graphic Design</h5>
+           <br>
+           
+           <h5>Logo Design</h5>
+           <br>
+           
+           <h5>Public Relations</h5>
+           <br>
+           
+           <h5>Logistics</h5>
+           <br>
+           
+           <h5>Proofreading</h5>
+           <br>
+           
+           <h5>Translation</h5>
+           
+           <br>
+           <h5>Research</h5>
+        </div>
+        <div class="we">
+            <h5>Research Writing</h5>
+            
+            <br>
+            <h5> Article Writing</h5>
+            
+            <br>
+            <h5>Web Scraping</h5>
+            
+            <br>
+            <h5>HTML</h5>
+            <br>
+            
+            <h5>CSS</h5>
+            
+            <br>
+            <h5>HTML 5</h5>
+            
+            <br>
+            <h5>Javascript</h5>
+            <br>
+            
+            <h5>Data Processing</h5>
+            <br>
+            
+            <h5>Python</h5>
+            <br>
+            
+            <h5>Word Press</h5>
+            <br>
+            
+            <h5>Web Search</h5>
+            <br>
+            
+            <h5>Finance</h5>
+        </div>
+        <div class="we">
+            <h5>Legal</h5>
+            <br>
+            
+            <h5>Linux</h5>
+            
+            <br>
+            <h5>Manufacturing</h5>
+            
+            <br>
+            <h5>Data Entry</h5>
+            
+            <br>
+            <h5>Content Writing</h5>
+            
+            <br>
+            <h5>Marketing</h5>
+            
+            <br>
+            <h5>Excel</h5>
+            
+            <br>
+            <h5>Ghostwriting</h5>
+        
+            <br>
+            <h5>Copywriting</h5>
+            
+            <br>
+            <h5>Accounting</h5>
+            
+            <br>
+            <h5>MySQL</h5>
+            
+            <br>
+            <h5>C++Programming</h5>
+        </div>
+        <div class="we">
+            <h5>Banner Design</h5>
+            <br>
+            
+            <h5>Illustration</h5>
+            <br>
+            
+            <h5>Link Building</h5>
+            <br>
+            
+            <h5>C# Programming</h5>
+            <br>
+            
+            <h5>PHP</h5>
+            <br>
+            
+            <h5>3D Modelling</h5>
+            <br>
+            
+            <h5>Photoshop</h5>
+            <br>
+            
+            <h5>Technical Writing</h5>
+            <br>
+            
+            <h5>Blogging</h5>
+            <br>
+            
+            <h5>Internet Marketing</h5>
+            <br>
+            
+            <h5>eCommerce</h5>
+            <br>
+            
+            <p>view more</p>
+        </div>
+    </div>
+
+    </div>
+    <div class="logo">
+    <br>
+    <br>
+    <p>As seen on</p>
+    <img src="../FREELANCER.html/the-new-york-times-darkmode.svg" alt="">
+    <img src="../FREELANCER.html/cnbc-darkmode.svg" alt="">
+    <img src="../FREELANCER.html/wall-street-journal-darkmode.svg" alt="">
+    <img src="../FREELANCER.html/cnn-darkmode.svg" alt="">
+    <img src="../FREELANCER.html/b" alt="">
+   </div>
+  
+</div>
+<div class="bird">
+    <h1><b>Power your organizations <br><p>competitive advantage</p>with freelancer </b> </h1>
+    <br>
+    <br>
+    <br>
+    <p> Freelancer Enterprices</p>
+    <br>
+    <h5>Company budget? Get more done for less. Use our workforce of millions to help <br> your business achieve more.</h5>
+    <br>
+    <h4>View more</h4>
+    <br>
+    <br>
+    <br>
+    <p>Freelancer API</p>
+    <h5>Millions of professionals on demand. Why hire people when you can simply <br> integrate our talented cloud workforce instead?</h5>
+    <br>
+    <h4>view more</h4>
+</div>
+</body>
+
+</html>
